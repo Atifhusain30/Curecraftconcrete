@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --iron: #171716;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-iron font-body antialiased;
+}
+
+::selection {
+  background: rgba(23, 23, 22, 0.12);
+}
+
+:focus-visible {
+  outline: 2px solid #171716;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-wrap px-5 sm:px-8;
+  }
+
+  .level-line {
+    @apply block h-[3px] w-12 bg-iron;
+  }
+
+  .eyebrow {
+    @apply font-display text-[13px] font-semibold uppercase tracking-[0.18em] text-steel;
+  }
+
+  .display-xl {
+    @apply font-display font-bold uppercase leading-[1.06] tracking-[0.01em];
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded px-7 py-3.5 font-display text-[15px] font-semibold uppercase tracking-[0.06em] transition-all duration-200 ease-out;
+  }
+  .btn-primary {
+    @apply btn bg-iron text-white hover:bg-black hover:shadow-lift active:translate-y-px;
+  }
+  .btn-dark {
+    @apply btn bg-iron text-white hover:bg-black hover:shadow-lift active:translate-y-px;
+  }
+  .btn-light {
+    @apply btn bg-white text-iron hover:bg-slab hover:shadow-lift active:translate-y-px;
+  }
+  .btn-ghost {
+    @apply btn border-2 border-iron/25 bg-transparent text-iron hover:border-iron active:translate-y-px;
+  }
+  .btn-ghost-light {
+    @apply btn border-2 border-white/50 bg-transparent text-white hover:border-white hover:bg-white/10 active:translate-y-px;
+  }
+
+  .field {
+    @apply w-full rounded border border-line bg-white px-3.5 py-2.5 text-[15px] text-iron placeholder:text-steel/50 focus:border-iron focus:outline-none focus:ring-2 focus:ring-iron/10 transition-colors;
+  }
+  .field-label {
+    @apply mb-1 block text-[13.5px] font-semibold text-graphite;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded border border-line bg-white px-4 py-2.5 font-display text-[14px] font-medium uppercase tracking-[0.04em] text-graphite transition-colors duration-200 hover:border-iron hover:text-iron;
+  }
+}
+
+/* Surfaces */
+.texture-dark {
+  background-color: #171716;
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.04) 0%, transparent 45%);
+}
+.texture-slab,
+.flow-slab {
+  background-color: #f4f4f2;
+}
+.hero-light {
+  background-color: #ffffff;
+}
+
+/* Gallery placeholder tiles (interior pages until real photos are added) */
+.tile-warm {
+  background: linear-gradient(150deg, #8a8578 0%, #6d6a5f 45%, #504e46 100%);
+}
+.tile-light {
+  background: linear-gradient(150deg, #b9b6ae 0%, #99968e 50%, #7c7972 100%);
+}
+.tile-cool {
+  background: linear-gradient(150deg, #6b6f73 0%, #53575c 50%, #3c4045 100%);
+}
+.tile-texture {
+  background-image: repeating-linear-gradient(45deg, transparent 0 14px, rgba(255, 255, 255, 0.02) 14px 15px);
+}
+
+/* Scroll reveal — subtle */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Legacy animation classes — static now */
+.rise {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
