@@ -18,11 +18,14 @@ import CtaBand from "@/components/CtaBand";
 import FaqList from "@/components/FaqList";
 import FaqSchema from "@/components/FaqSchema";
 import Reveal from "@/components/Reveal";
+import SpecStrip from "@/components/SpecStrip";
+import SpecChips from "@/components/SpecChips";
+import FinishShowcase from "@/components/FinishShowcase";
 
 export const metadata: Metadata = {
   title: `Concrete Contractor Dallas–Fort Worth | Driveways, Patios & Stamped Concrete | ${site.name}`,
   description:
-    "DFW's trusted concrete contractor. Driveways, patios, stamped & decorative concrete, and pool decks — self-performed crews, 5-year workmanship warranty, free written estimates. Call (214) 555-0199.",
+    "DFW's trusted concrete contractor. Driveways, patios, pavers, and stamped & decorative concrete — self-performed crews, 5-year workmanship warranty, free written estimates. Call (214) 555-0199.",
   alternates: { canonical: "/" },
 };
 
@@ -33,18 +36,16 @@ export const metadata: Metadata = {
 const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?q=80&w=${w}&auto=format&fit=crop`;
 
-const HERO_IMG = img("1523217582562-09d0def993a6", 2000);
+const HERO_IMG = "/images/hero.jpg"; // real project photo — crew finishing a backyard patio pour
 const CREW_IMG = img("1541888946425-d81bb19240f5", 1400);
 
 const SERVICE_IMGS = [
   img("1605146769289-440113cc3d00", 900), // driveways
   img("1600607687939-ce8a6c25118c", 900), // patios
-  img("1600585154340-be6161a56a0c", 900), // stamped
-  img("1600566753190-17f0baa2a6c3", 900), // pool decks
+  img("1600566753190-17f0baa2a6c3", 900), // pavers
+  img("1600585154340-be6161a56a0c", 900), // stamped & decorative
   img("1560184897-ae75f418493e", 900),    // sidewalks
   img("1504307651254-35680f356dfd", 900), // repair
-  img("1581094794329-c8112a89af12", 900), // commercial
-  img("1600047509807-ba8f99d2cdde", 900), // residential
 ];
 
 const GALLERY_IMGS = [
@@ -101,7 +102,7 @@ export default function HomePage() {
               Dallas–Fort Worth&apos;s Trusted Concrete Contractor
             </h1>
             <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-white/85">
-              Driveways, patios, stamped &amp; decorative concrete, and pool decks — poured by our own crews and
+              Driveways, patios, pavers, and stamped &amp; decorative concrete — poured by our own crews and
               backed by a written {site.warrantyYears}-year workmanship warranty.
             </p>
 
@@ -139,6 +140,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ============ JOB SPECS ============ */}
+      <SpecStrip />
+
       {/* ============ TRUST BADGES ============ */}
       <section className="border-b border-line bg-white" aria-label="Credentials">
         <div className="wrap grid grid-cols-2 gap-x-6 gap-y-8 py-10 lg:grid-cols-4">
@@ -163,9 +167,9 @@ export default function HomePage() {
             title="Concrete work we do every day"
             lead="Every service below is self-performed by CureCraft crews — same standards, same crew leads, no brokers."
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
-              <Reveal key={s.slug} delay={(i % 4) * 60}>
+              <Reveal key={s.slug} delay={(i % 3) * 60}>
                 <Link
                   href={`/services/${s.slug}/`}
                   className="group flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-card transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lift"
@@ -182,6 +186,7 @@ export default function HomePage() {
                   <div className="flex flex-1 flex-col p-5">
                     <h3 className="font-display text-[17px] font-bold uppercase tracking-[0.02em] text-iron">{s.name}</h3>
                     <p className="mt-2 flex-1 text-[14px] leading-relaxed text-steel">{s.short}</p>
+                    <SpecChips items={["4,000+ PSI", `${site.warrantyYears}-yr warranty`]} />
                     <span className="mt-4 inline-flex items-center gap-1.5 font-display text-[13.5px] font-semibold uppercase tracking-[0.06em] text-iron">
                       Learn more <ArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
                     </span>
@@ -192,6 +197,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ============ FINISHES & PATTERNS ============ */}
+      <FinishShowcase />
 
       {/* ============ WHY CHOOSE US ============ */}
       <section className="wrap grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16">
