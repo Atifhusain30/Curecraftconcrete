@@ -88,9 +88,37 @@ export const services: Service[] = [
     keywords: "concrete patio Dallas, patio contractor DFW, backyard patio Fort Worth",
   },
   {
+    slug: "pavers",
+    name: "Pavers",
+    short: "Interlocking paver driveways, patios, and walkways — laid on a compacted base that keeps them flat.",
+    heroLine: "Pavers that stay locked, level, and weed-free.",
+    intro:
+      "Pavers give you pattern, color, and a repairable surface — but only if the base under them is built right. Most failed paver jobs in DFW fail underground: thin base, no compaction, missing edge restraints. CureCraft installs pavers the same way we pour slabs — over engineered, compacted base — so the pattern you pick stays flat and tight for decades.",
+    benefits: [
+      { title: "Base built like a slab", body: "Excavated, graded, and compacted base at the right depth for the load — driveways get more base than walkways, always." },
+      { title: "Patterns laid true", body: "Herringbone, running bond, and basket weave laid off string lines so bond lines stay straight across the whole field." },
+      { title: "Edges that hold", body: "Concrete or spiked edge restraints on every install, so the field can't spread and unravel at the borders." },
+      { title: "Joints that fight weeds", body: "Polymeric sand swept and set into every joint — it hardens against weeds and washout while staying flexible." },
+    ],
+    process: [
+      { title: "Design & layout", body: "We help you pick paver style, color blend, pattern, and border details, then stake the layout on site." },
+      { title: "Excavation & base", body: "Soil is cut to depth, base material is placed in lifts and compacted to spec, and bedding sand is screeded flat." },
+      { title: "Laying & cutting", body: "Pavers are laid in pattern off string lines, with clean saw cuts at edges, curves, and borders." },
+      { title: "Restrain, sand & compact", body: "Edge restraints are installed, polymeric sand is swept and vibrated in, and the surface is compacted and misted to set." },
+    ],
+    materials: ["Concrete pavers (multiple styles/blends)", "Compacted flex base in lifts", "Concrete or spiked edge restraints", "Polymeric joint sand"],
+    timeline: "Walkways and small patios: 2–3 days. Paver driveways: typically 4–7 days including excavation and base work.",
+    faqs: [
+      { q: "Pavers or a concrete slab — which should I choose?", a: "Slabs cost less per square foot and are seamless; pavers cost more but offer pattern variety and spot-repairability — a stained or settled paver can be lifted and reset. We'll price both options honestly during your estimate." },
+      { q: "Will weeds grow between my pavers?", a: "Not through properly installed polymeric sand. It cures hard in the joints and blocks weed germination. If joints wash out years later, re-sanding is an easy maintenance job." },
+      { q: "Can you repair or re-level existing pavers?", a: "Yes — settled areas can be lifted, the base re-compacted, and the same pavers re-laid. It's one of the biggest advantages pavers have over poured concrete." },
+    ],
+    keywords: "paver installation Dallas, paver driveway DFW, paver patio Fort Worth, interlocking pavers",
+  },
+  {
     slug: "stamped-concrete",
-    name: "Stamped Concrete",
-    short: "The look of stone, slate, or wood plank — with the strength and price of concrete.",
+    name: "Stamped & Decorative Concrete",
+    short: "Stamped patterns, stains, and scored finishes — the look of stone, slate, or wood plank with concrete strength.",
     heroLine: "Stone-look results without stone-level maintenance.",
     intro:
       "Stamped concrete gives you the character of flagstone, slate, cobblestone, or wood plank at a fraction of the installed cost — with no joints for weeds and no pavers to shift. It is also unforgiving work: pattern layout, color, and timing have to be right the first time. This is a specialty of ours, not a sideline.",
@@ -114,34 +142,6 @@ export const services: Service[] = [
       { q: "Can you stamp over my existing patio?", a: "Existing slabs can often be resurfaced with a stampable overlay if they're structurally sound. We evaluate that during your estimate." },
     ],
     keywords: "stamped concrete DFW, stamped concrete patio Dallas, decorative stamped driveway",
-  },
-  {
-    slug: "pool-decks",
-    name: "Pool Decks",
-    short: "Cool-touch, slip-resistant decks that frame your pool and drain away from it.",
-    heroLine: "The deck your pool deserves — safe, cool, and clean-lined.",
-    intro:
-      "A pool deck has a harder job than any other slab: barefoot traffic, standing water, chlorine, and full Texas sun. CureCraft pool decks are built for that reality — slip-resistant finishes, lighter heat-reflective colors, expansion detailing around the pool shell, and drainage that carries splash-out away from both the pool and your house.",
-    benefits: [
-      { title: "Slip resistance where it matters", body: "Textured finishes and non-slip sealer additives keep wet feet planted." },
-      { title: "Cooler underfoot", body: "Lighter color palettes and finish choices reduce surface temperature in July sun." },
-      { title: "Proper isolation from the pool shell", body: "Expansion joints and mastic detailing let deck and pool move independently — no pressure cracks into the coping." },
-      { title: "Deck drains built in", body: "Slotted drains and correct slope move water out, preventing ponding and slippery algae zones." },
-    ],
-    process: [
-      { title: "Site & pool assessment", body: "We check coping condition, elevations, and drainage paths before designing the deck." },
-      { title: "Forming & isolation", body: "Forms are set with expansion detailing around the shell and any structures." },
-      { title: "Pour & finish", body: "Poured and finished in your chosen texture — broom, stamped, spray texture, or exposed aggregate." },
-      { title: "Seal with traction additive", body: "Sealed with non-slip additive and walked with you before the first swim." },
-    ],
-    materials: ["4,000 PSI concrete", "Mastic expansion joints", "Non-slip sealer additives", "Heat-reflective color options"],
-    timeline: "Typical pool deck remodels or new decks: 3–7 days depending on demo and finish.",
-    faqs: [
-      { q: "Can you replace my deck without damaging the pool?", a: "Yes. We saw-cut and remove decking carefully around coping and plumbing, and protect the shell throughout demo and pour." },
-      { q: "What's the best finish for a pool deck?", a: "Spray texture and broom finishes offer the best traction per dollar; stamped decks with non-slip sealer deliver the highest-end look. We'll show you samples." },
-      { q: "How soon can we swim after the work?", a: "The pool itself stays usable through most of the project. The new deck accepts foot traffic 24–48 hours after sealing." },
-    ],
-    keywords: "pool deck contractor Dallas, pool deck resurfacing DFW, concrete pool deck Fort Worth",
   },
   {
     slug: "sidewalks",
@@ -196,60 +196,6 @@ export const services: Service[] = [
       { q: "Is resurfacing durable?", a: "A bonded overlay on a sound slab performs for many years. On a failing base it's wasted money — which is why we inspect before we quote." },
     ],
     keywords: "concrete repair Dallas, concrete resurfacing DFW, driveway repair Fort Worth",
-  },
-  {
-    slug: "commercial-concrete",
-    name: "Commercial Concrete",
-    short: "Flatwork, ADA paths, dumpster pads, and site concrete for DFW businesses and GCs.",
-    heroLine: "Commercial flatwork delivered on spec and on schedule.",
-    intro:
-      "General contractors and property managers need concrete subs who hit dates, pour to spec, and keep sites clean and documented. CureCraft self-performs commercial flatwork across DFW: parking areas, ADA routes and ramps, dumpster pads, curbs, approaches, and equipment pads — with COIs, schedules, and closeout paperwork handled without chasing.",
-    benefits: [
-      { title: "Spec-driven work", body: "Mix designs, reinforcement, and testing coordinated to your civil drawings and project specs." },
-      { title: "Schedule reliability", body: "Crews show when promised, pours are sequenced around your trades, and we communicate before problems become delays." },
-      { title: "ADA compliance", body: "Ramps, landings, and running slopes poured to code the first time — no re-work at inspection." },
-      { title: "Fully insured and documented", body: "Certificates of insurance, lien waivers, and warranty documents delivered promptly." },
-    ],
-    process: [
-      { title: "Plan review & proposal", body: "We take off from your drawings and return a clear scope with inclusions and exclusions." },
-      { title: "Coordination", body: "Scheduling, utility checks, and inspection sequencing aligned with your superintendent." },
-      { title: "Execution", body: "Formed, reinforced, poured, and finished to spec, with photo documentation available." },
-      { title: "Closeout", body: "Punch items resolved fast; paperwork submitted for closeout." },
-    ],
-    materials: ["Spec-compliant mix designs", "Rebar per structural drawings", "Curing compounds per spec"],
-    timeline: "Scoped per project. We provide realistic pour schedules up front and hold them.",
-    faqs: [
-      { q: "Do you work with general contractors?", a: "Yes — GC subcontract work is a core part of our commercial business, alongside direct work for property owners and managers." },
-      { q: "What size projects do you take?", a: "From single dumpster pads and ADA ramp corrections up to multi-phase site flatwork packages." },
-    ],
-    keywords: "commercial concrete contractor Dallas, commercial flatwork DFW, ADA ramp contractor",
-  },
-  {
-    slug: "residential-concrete",
-    name: "Residential Concrete",
-    short: "Every slab on your property — driveways, patios, walkways, pads, and additions.",
-    heroLine: "One crew, one standard, for everything concrete at home.",
-    intro:
-      "From a small equipment pad to a complete driveway, patio, and walkway package, CureCraft handles residential concrete across the Metroplex with a single standard: proper base work, real reinforcement, hand finishing, and clean job sites. One point of contact from estimate to final walkthrough.",
-    benefits: [
-      { title: "Whole-property packages", body: "Bundle driveway, patio, and walkway work into one mobilization for better pricing and matched finishes." },
-      { title: "Slabs for anything", body: "Shed and shop pads, garage extensions, HVAC pads, basketball courts, and RV parking." },
-      { title: "Respect for your home", body: "Protected landscaping, clean cut lines, daily cleanup, and haul-off included." },
-      { title: "A warranty we honor", body: `Workmanship warranty on every residential pour — in writing.` },
-    ],
-    process: [
-      { title: "Free estimate", body: "On-site measurement and a written, itemized quote — no vague allowances." },
-      { title: "Scheduling", body: "A real start window, weather-adjusted honestly, with updates before every phase." },
-      { title: "Build", body: "Demo, base, form, reinforce, pour, finish — inspected at every step by the crew lead." },
-      { title: "Walkthrough", body: "We walk the work with you, explain cure timelines, and stand behind the result." },
-    ],
-    materials: ["4,000+ PSI mixes", "Steel reinforcement standard", "Finish and color options across the range"],
-    timeline: "Small pads: 1–2 days. Full-property packages: typically 1–2 weeks.",
-    faqs: [
-      { q: "Do you charge for estimates?", a: "No. Estimates are free, in writing, and itemized so you can compare fairly." },
-      { q: "Are you licensed and insured?", a: "CureCraft is fully insured, and we're happy to provide certificates before work begins." },
-    ],
-    keywords: "residential concrete contractor Dallas, concrete company near me, home concrete DFW",
   },
 ];
 
