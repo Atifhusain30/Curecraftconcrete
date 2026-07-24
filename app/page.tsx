@@ -23,9 +23,9 @@ import SpecChips from "@/components/SpecChips";
 import FinishShowcase from "@/components/FinishShowcase";
 
 export const metadata: Metadata = {
-  title: `Concrete Contractor Dallas–Fort Worth | Driveways, Patios & Stamped Concrete | ${site.name}`,
+  title: `Concrete Contractor Dallas–Fort Worth | Driveways, Pavers & Stamped Concrete | ${site.name}`,
   description:
-    "DFW's trusted concrete contractor. Driveways, patios, pavers, and stamped & decorative concrete — self-performed crews, 5-year workmanship warranty, free written estimates. Call (214) 555-0199.",
+    "DFW's trusted concrete contractor. Driveways, pavers, and stamped & decorative concrete — self-performed crews, 5-year workmanship warranty, free written estimates. Call (214) 555-0199.",
   alternates: { canonical: "/" },
 };
 
@@ -36,12 +36,11 @@ export const metadata: Metadata = {
 const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?q=80&w=${w}&auto=format&fit=crop`;
 
-const HERO_IMG = "/images/hero.jpg"; // real project photo — crew finishing a backyard patio pour
+const HERO_IMG = "/images/hero.jpg"; // real project photo — crew finishing a slab pour
 const CREW_IMG = img("1541888946425-d81bb19240f5", 1400);
 
 const SERVICE_IMGS = [
   img("1605146769289-440113cc3d00", 900), // driveways
-  img("1600607687939-ce8a6c25118c", 900), // patios
   img("1600566753190-17f0baa2a6c3", 900), // pavers
   img("1600585154340-be6161a56a0c", 900), // stamped & decorative
   img("1560184897-ae75f418493e", 900),    // sidewalks
@@ -102,7 +101,7 @@ export default function HomePage() {
               Dallas–Fort Worth&apos;s Trusted Concrete Contractor
             </h1>
             <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-white/85">
-              Driveways, patios, pavers, and stamped &amp; decorative concrete — poured by our own crews and
+              Driveways, pavers, and stamped &amp; decorative concrete — poured by our own crews and
               backed by a written {site.warrantyYears}-year workmanship warranty.
             </p>
 

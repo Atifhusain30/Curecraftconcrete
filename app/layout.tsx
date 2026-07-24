@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "CureCraft Concrete is DFW's premium concrete contractor — driveways, patios, pavers, stamped & decorative concrete, and repair. Licensed & insured. Free estimates.",
+    "CureCraft Concrete is DFW's premium concrete contractor — driveways, pavers, stamped & decorative concrete, and repair. Licensed & insured. Free estimates.",
   keywords: [
     "concrete contractor Dallas",
     "concrete contractor Fort Worth",
     "stamped concrete DFW",
-    "concrete patio Dallas",
+    "paver installation Dallas",
     "concrete driveway Dallas",
     "concrete company near me",
   ],
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: site.url,
     title: `Concrete Contractor Dallas–Fort Worth | ${site.name}`,
-    description: "Premium driveways, patios, stamped & decorative concrete across the DFW Metroplex. Free estimates.",
+    description: "Premium driveways, pavers, stamped & decorative concrete across the DFW Metroplex. Free estimates.",
     images: [{ url: "/logo.png", width: 512, height: 512, alt: "CureCraft Concrete logo" }],
   },
   twitter: {
     card: "summary",
     title: `Concrete Contractor Dallas–Fort Worth | ${site.name}`,
-    description: "Premium driveways, patios, stamped & decorative concrete across the DFW Metroplex. Free estimates.",
+    description: "Premium driveways, pavers, stamped & decorative concrete across the DFW Metroplex. Free estimates.",
   },
   robots: { index: true, follow: true },
   icons: { icon: "/logo.png" },
@@ -51,7 +51,7 @@ const localBusinessSchema = {
   image: `${site.url}/logo.png`,
   logo: `${site.url}/logo.png`,
   description:
-    "Premium concrete contractor serving the Dallas–Fort Worth Metroplex. Driveways, patios, pavers, stamped and decorative concrete, sidewalks, and concrete repair.",
+    "Premium concrete contractor serving the Dallas–Fort Worth Metroplex. Driveways, pavers, stamped and decorative concrete, sidewalks, and concrete repair.",
   address: {
     "@type": "PostalAddress",
     addressLocality: site.address.locality,

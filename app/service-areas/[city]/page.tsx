@@ -19,13 +19,13 @@ export function generateMetadata({ params }: { params: { city: string } }): Meta
   if (!city) return {};
   return {
     title: `Concrete Contractor in ${city.name}, TX`,
-    description: `CureCraft Concrete pours driveways, patios, pavers, and stamped concrete in ${city.name}, TX. Licensed, insured, free estimates, ${site.warrantyYears}-year warranty.`,
+    description: `CureCraft Concrete pours driveways, pavers, and stamped concrete in ${city.name}, TX. Licensed, insured, free estimates, ${site.warrantyYears}-year warranty.`,
     keywords: [
       `concrete contractor ${city.name}`,
       `concrete company ${city.name} TX`,
       `stamped concrete ${city.name}`,
       `concrete driveway ${city.name}`,
-      `concrete patio ${city.name}`,
+      `paver installation ${city.name}`,
     ],
     alternates: { canonical: `/service-areas/${city.slug}/` },
   };

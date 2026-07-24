@@ -7,7 +7,7 @@ import GalleryGrid from "./GalleryGrid";
 export const metadata: Metadata = {
   title: "Project Gallery | Concrete Work Across DFW",
   description:
-    "Browse CureCraft Concrete projects across Dallas–Fort Worth: stamped patios, driveway replacements, paver installs, decorative concrete, and sidewalk repair.",
+    "Browse CureCraft Concrete projects across Dallas–Fort Worth: stamped finishes, driveway replacements, paver installs, decorative concrete, and sidewalk repair.",
   alternates: { canonical: "/gallery/" },
 };
 

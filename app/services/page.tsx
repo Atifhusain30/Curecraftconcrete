@@ -10,7 +10,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Concrete Services in Dallas–Fort Worth",
   description:
-    "Driveways, patios, pavers, stamped & decorative concrete, sidewalks, and repair — every CureCraft service, built to one structural standard.",
+    "Driveways, pavers, stamped & decorative concrete, sidewalks, and repair — every CureCraft service, built to one structural standard.",
   alternates: { canonical: "/services/" },
 };
 

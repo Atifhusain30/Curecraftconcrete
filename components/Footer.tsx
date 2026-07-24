@@ -16,7 +16,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/60">
-            Premium concrete contractor serving the {site.serviceArea}. Driveways, patios, stamped and decorative
+            Premium concrete contractor serving the {site.serviceArea}. Driveways, pavers, stamped and decorative
             concrete — poured to last a lifetime.
           </p>
           <ul className="mt-6 space-y-3 text-[14px]">

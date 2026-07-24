@@ -10,7 +10,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "About CureCraft Concrete | DFW's Craftsmanship-First Contractor",
   description:
-    "Locally owned, fully insured, and obsessed with the work you can't see. Meet the concrete contractor DFW homeowners trust for driveways, patios, and decorative work.",
+    "Locally owned, fully insured, and obsessed with the work you can't see. Meet the concrete contractor DFW homeowners trust for driveways, pavers, and decorative work.",
   alternates: { canonical: "/about/" },
 };
 
