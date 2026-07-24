@@ -60,37 +60,9 @@ export const services: Service[] = [
     keywords: "concrete driveway Dallas, driveway contractor DFW, driveway replacement Fort Worth",
   },
   {
-    slug: "patios",
-    name: "Concrete Patios",
-    short: "Custom outdoor living spaces, from clean broom-finish slabs to fully decorative patios.",
-    heroLine: "The foundation of your backyard, poured with intention.",
-    intro:
-      "A patio should fit the way you actually live outside — grilling, hosting, or building toward a full outdoor kitchen. CureCraft designs and pours patios that handle Texas heat and soil movement while looking sharp for decades, whether you want a clean broom finish or full stamped and stained decorative work.",
-    benefits: [
-      { title: "Designed around your yard", body: "We plan layout, elevations, and drainage around your home, trees, and future plans — covers, kitchens, pools." },
-      { title: "Finish options for every style", body: "Broom, trowel, exposed aggregate, stamped patterns, and integral or stained color." },
-      { title: "Built to extend later", body: "We set elevations and joints so future additions tie in cleanly instead of looking bolted on." },
-      { title: "No ponding, no runoff issues", body: "Slopes are set so water leaves the patio and stays away from your foundation." },
-    ],
-    process: [
-      { title: "Design consultation", body: "We walk the space, discuss how you'll use it, and sketch a layout with real dimensions and pricing." },
-      { title: "Layout & forming", body: "The patio is formed to exact lines and elevations, with base compacted and reinforcement placed." },
-      { title: "Pour & finish", body: "Concrete is poured and hand-finished in your chosen texture and color." },
-      { title: "Seal & handoff", body: "Decorative work is sealed, joints are cut, and we review care and cure timelines with you." },
-    ],
-    materials: ["4,000 PSI concrete", "Steel reinforcement", "Integral color / acid or water-based stains", "Penetrating or film-forming sealers"],
-    timeline: "Typical patios: 2–5 days depending on size and finish. Stamped and stained work adds sealing time.",
-    faqs: [
-      { q: "Can you match my existing concrete?", a: "We can get very close on texture and tone, though sun exposure and age mean an exact color match is never guaranteed. Decorative finishes give us more control." },
-      { q: "Do I need a permit for a patio?", a: "Most DFW cities don't require permits for uncovered flatwork, but rules vary. We confirm requirements for your city before work begins." },
-      { q: "How big should my patio be?", a: "A dining setup needs roughly 12×12 feet; full outdoor living areas usually run 300–600 square feet. We help you size it during the estimate." },
-    ],
-    keywords: "concrete patio Dallas, patio contractor DFW, backyard patio Fort Worth",
-  },
-  {
     slug: "pavers",
     name: "Pavers",
-    short: "Interlocking paver driveways, patios, and walkways — laid on a compacted base that keeps them flat.",
+    short: "Interlocking paver driveways and walkways — laid on a compacted base that keeps them flat.",
     heroLine: "Pavers that stay locked, level, and weed-free.",
     intro:
       "Pavers give you pattern, color, and a repairable surface — but only if the base under them is built right. Most failed paver jobs in DFW fail underground: thin base, no compaction, missing edge restraints. CureCraft installs pavers the same way we pour slabs — over engineered, compacted base — so the pattern you pick stays flat and tight for decades.",
@@ -107,13 +79,13 @@ export const services: Service[] = [
       { title: "Restrain, sand & compact", body: "Edge restraints are installed, polymeric sand is swept and vibrated in, and the surface is compacted and misted to set." },
     ],
     materials: ["Concrete pavers (multiple styles/blends)", "Compacted flex base in lifts", "Concrete or spiked edge restraints", "Polymeric joint sand"],
-    timeline: "Walkways and small patios: 2–3 days. Paver driveways: typically 4–7 days including excavation and base work.",
+    timeline: "Walkways: 2–3 days. Paver driveways: typically 4–7 days including excavation and base work.",
     faqs: [
       { q: "Pavers or a concrete slab — which should I choose?", a: "Slabs cost less per square foot and are seamless; pavers cost more but offer pattern variety and spot-repairability — a stained or settled paver can be lifted and reset. We'll price both options honestly during your estimate." },
       { q: "Will weeds grow between my pavers?", a: "Not through properly installed polymeric sand. It cures hard in the joints and blocks weed germination. If joints wash out years later, re-sanding is an easy maintenance job." },
       { q: "Can you repair or re-level existing pavers?", a: "Yes — settled areas can be lifted, the base re-compacted, and the same pavers re-laid. It's one of the biggest advantages pavers have over poured concrete." },
     ],
-    keywords: "paver installation Dallas, paver driveway DFW, paver patio Fort Worth, interlocking pavers",
+    keywords: "paver installation Dallas, paver driveway DFW, paver walkway Fort Worth, interlocking pavers",
   },
   {
     slug: "stamped-concrete",
@@ -139,9 +111,9 @@ export const services: Service[] = [
     faqs: [
       { q: "Does stamped concrete need maintenance?", a: "A wash and re-seal every 2–3 years keeps color rich and the surface protected. It's an afternoon of work, not a season of it." },
       { q: "Is stamped concrete slippery?", a: "Around pools and steps we add a non-slip additive to the sealer, which keeps traction without dulling the finish." },
-      { q: "Can you stamp over my existing patio?", a: "Existing slabs can often be resurfaced with a stampable overlay if they're structurally sound. We evaluate that during your estimate." },
+      { q: "Can you stamp over my existing concrete?", a: "Existing slabs can often be resurfaced with a stampable overlay if they're structurally sound. We evaluate that during your estimate." },
     ],
-    keywords: "stamped concrete DFW, stamped concrete patio Dallas, decorative stamped driveway",
+    keywords: "stamped concrete DFW, decorative concrete Dallas, decorative stamped driveway",
   },
   {
     slug: "sidewalks",
@@ -154,7 +126,7 @@ export const services: Service[] = [
       { title: "Trip hazards eliminated", body: "We remove and replace heaved sections and pour new walks over compacted base so they stay in plane." },
       { title: "City and ADA specs handled", body: "Slopes, widths, joints, and ramp details poured to municipal and accessibility standards." },
       { title: "Clean lines and curves", body: "Forms are set with care — radii flow, edges are straight, and joints are evenly spaced." },
-      { title: "Matched to your property", body: "Finish and tone selected to complement existing driveways and patios." },
+      { title: "Matched to your property", body: "Finish and tone selected to complement your existing driveways and flatwork." },
     ],
     process: [
       { title: "Layout & grade check", body: "We stake the path, confirm slopes for drainage and accessibility, and mark utilities." },
@@ -213,8 +185,8 @@ const finishImg = (id: string) =>
 
 export const finishes: Finish[] = [
   { slug: "broom", name: "Broom Finish", bestFor: "Driveways & sidewalks — clean look, best traction per dollar", img: finishImg("1605146769289-440113cc3d00"), serviceSlug: "driveways" },
-  { slug: "ashlar-slate", name: "Ashlar Slate Stamp", bestFor: "Patios that want a natural cut-stone look", img: finishImg("1600585154340-be6161a56a0c"), serviceSlug: "stamped-concrete" },
-  { slug: "wood-plank", name: "Wood-Plank Stamp", bestFor: "Porches & patios — wood warmth, zero rot", img: finishImg("1600573472592-401b489a3cdc"), serviceSlug: "stamped-concrete" },
+  { slug: "ashlar-slate", name: "Ashlar Slate Stamp", bestFor: "Outdoor slabs that want a natural cut-stone look", img: finishImg("1600585154340-be6161a56a0c"), serviceSlug: "stamped-concrete" },
+  { slug: "wood-plank", name: "Wood-Plank Stamp", bestFor: "Porches & walkways — wood warmth, zero rot", img: finishImg("1600573472592-401b489a3cdc"), serviceSlug: "stamped-concrete" },
   { slug: "exposed-aggregate", name: "Exposed Aggregate", bestFor: "Walkways & pool surrounds — texture that hides wear", img: finishImg("1560184897-ae75f418493e"), serviceSlug: "sidewalks" },
   { slug: "stain-score", name: "Stain & Score", bestFor: "Refreshing sound existing slabs with color and pattern", img: finishImg("1600121848594-d8644e57abab"), serviceSlug: "concrete-repair" },
   { slug: "paver-patterns", name: "Paver Patterns", bestFor: "Herringbone, running bond & basket weave fields", img: finishImg("1600566753190-17f0baa2a6c3"), serviceSlug: "pavers" },
@@ -237,18 +209,18 @@ export type City = {
 };
 
 export const cities: City[] = [
-  { slug: "dallas", name: "Dallas", county: "Dallas County", intro: "From M Streets bungalows to Preston Hollow estates, Dallas properties span a century of construction styles — and a century of aging concrete. CureCraft replaces failing driveways, pours custom patios, and handles decorative work across the city with crews based right here in the Metroplex.", localNote: "Dallas's expansive Blackland Prairie clay is among the most active soil in Texas. Base preparation and reinforcement aren't upsells here — they're the difference between a 5-year slab and a 30-year slab.", faqs: [{ q: "Do you handle permits in Dallas?", a: "Most residential flatwork in Dallas doesn't require a permit, but right-of-way work (approaches, city sidewalks) does. We confirm and handle requirements for your project." }, { q: "How fast can you start a project in Dallas?", a: "Most Dallas projects are scheduled within 1–3 weeks of an approved estimate, weather depending." }] },
+  { slug: "dallas", name: "Dallas", county: "Dallas County", intro: "From M Streets bungalows to Preston Hollow estates, Dallas properties span a century of construction styles — and a century of aging concrete. CureCraft replaces failing driveways, installs paver walkways, and handles decorative work across the city with crews based right here in the Metroplex.", localNote: "Dallas's expansive Blackland Prairie clay is among the most active soil in Texas. Base preparation and reinforcement aren't upsells here — they're the difference between a 5-year slab and a 30-year slab.", faqs: [{ q: "Do you handle permits in Dallas?", a: "Most residential flatwork in Dallas doesn't require a permit, but right-of-way work (approaches, city sidewalks) does. We confirm and handle requirements for your project." }, { q: "How fast can you start a project in Dallas?", a: "Most Dallas projects are scheduled within 1–3 weeks of an approved estimate, weather depending." }] },
   { slug: "fort-worth", name: "Fort Worth", county: "Tarrant County", intro: "Fort Worth homeowners call us for driveway replacements in established neighborhoods like Arlington Heights and new pours in fast-growing far-north communities. We bring the same crew standards to both: compacted base, steel reinforcement, and clean hand finishing.", localNote: "Much of Fort Worth sits on mixed clay and limestone transitions, which can shear slabs poured without joints planned for differential movement. We plan for it on every pour.", faqs: [{ q: "Do you serve all of Fort Worth?", a: "Yes — from the Cultural District to Alliance and everywhere between, plus surrounding Tarrant County cities." }, { q: "Can you match the finish on my existing Fort Worth home's flatwork?", a: "We match texture and joint patterns closely; exact color matching depends on age and exposure, which we'll assess on site." }] },
-  { slug: "plano", name: "Plano", county: "Collin County", intro: "Plano's mature neighborhoods — many built in the 1980s and 90s — are hitting the age where original driveways and patios are failing at the joints. CureCraft specializes in full replacements and decorative upgrades that lift curb appeal in established Plano streets.", localNote: "Original Plano-era driveways were often poured thin over minimal base. When we replace them, we rebuild the base first — that's why our replacements outlast the originals.", faqs: [{ q: "Do many Plano homeowners upgrade to decorative finishes?", a: "Yes — stamped borders and stained patios are among our most-requested Plano upgrades when replacing tired flatwork." }] },
-  { slug: "frisco", name: "Frisco", county: "Collin County", intro: "Frisco is building fast, and builders don't always pour patios sized for how families actually live. Our most common Frisco projects are patio extensions, outdoor living slabs, and paver walkways that tie new backyards together.", localNote: "New Frisco developments often have tight lot drainage plans. We design every extension so water still routes exactly as the neighborhood engineering intended.", faqs: [{ q: "Can you extend my builder-poured patio in Frisco?", a: "Yes — we tie into existing slabs with dowels and matched elevations so the extension performs and looks like one pour." }] },
-  { slug: "mckinney", name: "McKinney", county: "Collin County", intro: "From historic downtown McKinney properties to new construction in Trinity Falls, we pour driveways, patios, and walkways matched to each home's character — including decorative finishes that suit historic-district aesthetics.", localNote: "Historic McKinney properties often need careful demo around mature trees. We hand-work around root zones and adjust slab design instead of tearing roots out.", faqs: [{ q: "Do you work near mature trees in McKinney?", a: "Constantly. We design joints and reinforcement around root zones and can bridge or float sections where roots demand it." }] },
-  { slug: "allen", name: "Allen", county: "Collin County", intro: "Allen homeowners call CureCraft for driveway replacements, backyard patio projects, and paver walkways. Our crews are in Allen weekly, and our estimate-to-start timelines here are among our fastest.", localNote: "Allen HOAs commonly require finish and color continuity for front-yard flatwork. We handle HOA specs and paperwork as part of the project.", faqs: [{ q: "Will you help with HOA approval in Allen?", a: "Yes — we provide drawings, finish samples, and specs your HOA typically requires." }] },
-  { slug: "prosper", name: "Prosper", county: "Collin County", intro: "Prosper's large lots invite serious outdoor living: oversized patios, outdoor kitchens, sport courts, and long custom driveways. CureCraft pours the large-format slabs these projects demand without sacrificing finish quality.", localNote: "Large rural-transition lots in Prosper often lack established drainage. We grade and design every large slab to shed water predictably across big surfaces.", faqs: [{ q: "Can you pour a sport court in Prosper?", a: "Yes — flat-tolerance slabs for basketball and sport courts are a Prosper specialty, sized and reinforced for the span." }] },
-  { slug: "little-elm", name: "Little Elm", county: "Denton County", intro: "Lakeside living in Little Elm means patios, walkways, and paver paths built for outdoor time. We pour finishes that stay cooler underfoot and stand up to constant sun and water exposure.", localNote: "Proximity to Lewisville Lake means sandy-clay transitions in some Little Elm neighborhoods — we verify base conditions before every pour rather than assuming.", faqs: [{ q: "Do you install pavers in Little Elm?", a: "Yes — paver patios and walkways are among our most common Little Elm projects, laid over properly compacted base." }] },
+  { slug: "plano", name: "Plano", county: "Collin County", intro: "Plano's mature neighborhoods — many built in the 1980s and 90s — are hitting the age where original driveways and walkways are failing at the joints. CureCraft specializes in full replacements and decorative upgrades that lift curb appeal in established Plano streets.", localNote: "Original Plano-era driveways were often poured thin over minimal base. When we replace them, we rebuild the base first — that's why our replacements outlast the originals.", faqs: [{ q: "Do many Plano homeowners upgrade to decorative finishes?", a: "Yes — stamped borders and stained finishes are among our most-requested Plano upgrades when replacing tired flatwork." }] },
+  { slug: "frisco", name: "Frisco", county: "Collin County", intro: "Frisco is building fast, and builder-grade flatwork doesn't always keep up with how families actually live. Our most common Frisco projects are driveway upgrades, decorative concrete, and paver walkways that tie new backyards together.", localNote: "New Frisco developments often have tight lot drainage plans. We design every pour so water still routes exactly as the neighborhood engineering intended.", faqs: [{ q: "Can you tie new concrete into my builder-poured slab in Frisco?", a: "Yes — we tie into existing slabs with dowels and matched elevations so the new work performs and looks like one pour." }] },
+  { slug: "mckinney", name: "McKinney", county: "Collin County", intro: "From historic downtown McKinney properties to new construction in Trinity Falls, we pour driveways, sidewalks, and walkways matched to each home's character — including decorative finishes that suit historic-district aesthetics.", localNote: "Historic McKinney properties often need careful demo around mature trees. We hand-work around root zones and adjust slab design instead of tearing roots out.", faqs: [{ q: "Do you work near mature trees in McKinney?", a: "Constantly. We design joints and reinforcement around root zones and can bridge or float sections where roots demand it." }] },
+  { slug: "allen", name: "Allen", county: "Collin County", intro: "Allen homeowners call CureCraft for driveway replacements, decorative concrete, and paver walkways. Our crews are in Allen weekly, and our estimate-to-start timelines here are among our fastest.", localNote: "Allen HOAs commonly require finish and color continuity for front-yard flatwork. We handle HOA specs and paperwork as part of the project.", faqs: [{ q: "Will you help with HOA approval in Allen?", a: "Yes — we provide drawings, finish samples, and specs your HOA typically requires." }] },
+  { slug: "prosper", name: "Prosper", county: "Collin County", intro: "Prosper's large lots invite serious outdoor living: outdoor kitchen slabs, sport courts, and long custom driveways. CureCraft pours the large-format slabs these projects demand without sacrificing finish quality.", localNote: "Large rural-transition lots in Prosper often lack established drainage. We grade and design every large slab to shed water predictably across big surfaces.", faqs: [{ q: "Can you pour a sport court in Prosper?", a: "Yes — flat-tolerance slabs for basketball and sport courts are a Prosper specialty, sized and reinforced for the span." }] },
+  { slug: "little-elm", name: "Little Elm", county: "Denton County", intro: "Lakeside living in Little Elm means walkways, paver paths, and outdoor slabs built for outdoor time. We pour finishes that stay cooler underfoot and stand up to constant sun and water exposure.", localNote: "Proximity to Lewisville Lake means sandy-clay transitions in some Little Elm neighborhoods — we verify base conditions before every pour rather than assuming.", faqs: [{ q: "Do you install pavers in Little Elm?", a: "Yes — paver walkways and paths are among our most common Little Elm projects, laid over properly compacted base."}] },
   { slug: "arlington", name: "Arlington", county: "Tarrant County", intro: "Arlington's mix of established neighborhoods and commercial corridors keeps our crews busy with driveway replacements, sidewalk repair, and paver work alike — all self-performed, never brokered out.", localNote: "Arlington's older sidewalks and approaches frequently fail at tree roots and utility trenches. We repair at the panel level so you're not paying to replace sound concrete.", faqs: [{ q: "Do you repair sidewalks in Arlington?", a: "Yes — we replace failed panels at the panel level so you're not paying to replace sound concrete." }] },
-  { slug: "irving", name: "Irving", county: "Dallas County", intro: "From Las Colinas to established Irving neighborhoods, CureCraft delivers driveways, patios, walkways, and repair work with the documentation and scheduling reliability homeowners expect.", localNote: "Much of our Irving work is driveway, patio, and walkway flatwork — poured to pass inspection the first time.", faqs: [{ q: "Can you fix a settled or cracked driveway at my Irving property?", a: "Yes — we diagnose whether panel replacement, resurfacing, or full replacement is the honest fix, and quote each sensible option." }] },
-  { slug: "southlake", name: "Southlake", county: "Tarrant County", intro: "Southlake homeowners expect finish quality that matches the neighborhood — and that's exactly the work we like doing. Decorative driveways, stamped patios, and paver installations with detailing that holds up to close inspection.", localNote: "Southlake projects skew decorative: stamped borders, exposed aggregate, and stained finishes. Our decorative crew leads handle these pours personally.", faqs: [{ q: "Do you do high-end decorative work in Southlake?", a: "It's our favorite kind of project — ask to see our stamped and stained portfolio during your estimate." }] },
-  { slug: "flower-mound", name: "Flower Mound", county: "Denton County", intro: "Flower Mound's tree-heavy lots and rolling grades make for beautiful properties and tricky pours. We design slabs around elevation changes and root zones so the finished work looks effortless.", localNote: "Grade changes across Flower Mound lots often call for steps, retaining details, or terraced patios — all of which we form and pour in-house.", faqs: [{ q: "Can you pour a terraced patio in Flower Mound?", a: "Yes — multi-level patios with integrated steps are one of our signature Flower Mound project types." }] },
+  { slug: "irving", name: "Irving", county: "Dallas County", intro: "From Las Colinas to established Irving neighborhoods, CureCraft delivers driveways, walkways, and repair work with the documentation and scheduling reliability homeowners expect.", localNote: "Much of our Irving work is driveway and walkway flatwork — poured to pass inspection the first time.", faqs: [{ q: "Can you fix a settled or cracked driveway at my Irving property?", a: "Yes — we diagnose whether panel replacement, resurfacing, or full replacement is the honest fix, and quote each sensible option." }] },
+  { slug: "southlake", name: "Southlake", county: "Tarrant County", intro: "Southlake homeowners expect finish quality that matches the neighborhood — and that's exactly the work we like doing. Decorative driveways, stamped finishes, and paver installations with detailing that holds up to close inspection.", localNote: "Southlake projects skew decorative: stamped borders, exposed aggregate, and stained finishes. Our decorative crew leads handle these pours personally.", faqs: [{ q: "Do you do high-end decorative work in Southlake?", a: "It's our favorite kind of project — ask to see our stamped and stained portfolio during your estimate." }] },
+  { slug: "flower-mound", name: "Flower Mound", county: "Denton County", intro: "Flower Mound's tree-heavy lots and rolling grades make for beautiful properties and tricky pours. We design slabs around elevation changes and root zones so the finished work looks effortless.", localNote: "Grade changes across Flower Mound lots often call for steps, retaining details, or terraced walkways — all of which we form and pour in-house.", faqs: [{ q: "Can you pour terraced walkways and steps in Flower Mound?", a: "Yes — multi-level walkways with integrated steps are one of our signature Flower Mound project types." }] },
   { slug: "grapevine", name: "Grapevine", county: "Tarrant County", intro: "Historic Grapevine homes and lake-adjacent properties both get the same treatment from CureCraft: careful demo, honest base work, and finishes chosen to fit the property's character.", localNote: "Near Grapevine Lake, we pay extra attention to drainage and erosion at slab edges — details that decide how flatwork ages on sloped lake lots.", faqs: [{ q: "Do you serve the Grapevine lake area?", a: "Yes — including sloped and terraced lots that need thoughtful drainage design." }] },
 ];
 
@@ -267,24 +239,24 @@ export const globalFaqs = [
 // Replace with real customer reviews (and link your Google Business Profile) before launch.
 export const testimonials = [
   { name: "Melissa R.", city: "Plano", service: "Driveway Replacement", quote: "They tore out our cracked 30-year-old driveway and the new one is flawless — straight lines, clean joints, and they left the yard cleaner than they found it." },
-  { name: "James T.", city: "Frisco", service: "Patio Extension", quote: "You genuinely cannot tell where the builder's patio ends and the extension begins. Exactly what we asked for." },
-  { name: "Dana W.", city: "Southlake", service: "Paver Patio", quote: "The herringbone paver patio is dead flat and the pattern runs perfectly straight. Two summers in — not one weed, not one shifted paver." },
+  { name: "James T.", city: "Frisco", service: "Stamped Driveway", quote: "The stamped border driveway came out better than the inspiration photos we showed them. Neighbors keep asking who poured it." },
+  { name: "Dana W.", city: "Southlake", service: "Paver Walkway", quote: "The herringbone paver walkway is dead flat and the pattern runs perfectly straight. Two summers in — not one weed, not one shifted paver." },
   { name: "Robert M.", city: "Fort Worth", service: "Concrete Repair", quote: "Two other companies quoted a full tear-out. CureCraft showed me why panel replacement was all it needed and saved me thousands." },
-  { name: "Priya S.", city: "Allen", service: "Backyard Patio", quote: "Clear quote, real schedule, daily updates, beautiful finish. This is how contracting should work." },
+  { name: "Priya S.", city: "Allen", service: "Stamped & Stained Slab", quote: "Clear quote, real schedule, daily updates, beautiful finish. This is how contracting should work." },
   { name: "Carlos G.", city: "McKinney", service: "Walkway & Steps", quote: "They hand-worked around our old oak's roots instead of cutting them. That care showed up in every detail of the job." },
 ];
 
 export const galleryProjects = [
-  { title: "Ashlar Slate Stamped Patio", city: "Southlake", category: "Stamped & Decorative", tone: "warm" },
+  { title: "Ashlar Slate Stamped Courtyard", city: "Southlake", category: "Stamped & Decorative", tone: "warm" },
   { title: "Broom-Finish Driveway Replacement", city: "Plano", category: "Driveways", tone: "light" },
   { title: "Herringbone Paver Driveway", city: "Frisco", category: "Pavers", tone: "cool" },
-  { title: "Terraced Backyard Patio", city: "Flower Mound", category: "Patios", tone: "warm" },
+  { title: "Terraced Walkway & Steps", city: "Flower Mound", category: "Sidewalks", tone: "warm" },
   { title: "Exposed Aggregate Walkway", city: "McKinney", category: "Sidewalks", tone: "light" },
   { title: "Wood-Plank Stamped Porch", city: "Prosper", category: "Stamped & Decorative", tone: "warm" },
   { title: "Circular Drive Addition", city: "Dallas", category: "Driveways", tone: "light" },
-  { title: "Outdoor Kitchen Slab & Patio", city: "Allen", category: "Patios", tone: "cool" },
+  { title: "Outdoor Kitchen Slab", city: "Allen", category: "Stamped & Decorative", tone: "cool" },
   { title: "Sidewalk Panel Replacement", city: "Irving", category: "Concrete Repair", tone: "cool" },
-  { title: "Stained & Scored Patio", city: "Dallas", category: "Stamped & Decorative", tone: "warm" },
+  { title: "Stained & Scored Porch", city: "Dallas", category: "Stamped & Decorative", tone: "warm" },
   { title: "RV Pad with Turnout", city: "Little Elm", category: "Driveways", tone: "light" },
   { title: "Basket Weave Paver Walkway", city: "Arlington", category: "Pavers", tone: "cool" },
 ];
