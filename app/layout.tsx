@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "CureCraft Concrete is DFW's premium concrete contractor — driveways, patios, stamped & decorative concrete, pool decks, and repair. Licensed & insured. Free estimates.",
+    "CureCraft Concrete is DFW's premium concrete contractor — driveways, patios, pavers, stamped & decorative concrete, and repair. Licensed & insured. Free estimates.",
   keywords: [
     "concrete contractor Dallas",
     "concrete contractor Fort Worth",
@@ -51,7 +51,7 @@ const localBusinessSchema = {
   image: `${site.url}/logo.png`,
   logo: `${site.url}/logo.png`,
   description:
-    "Premium concrete contractor serving the Dallas–Fort Worth Metroplex. Driveways, patios, stamped and decorative concrete, pool decks, sidewalks, repair, and commercial flatwork.",
+    "Premium concrete contractor serving the Dallas–Fort Worth Metroplex. Driveways, patios, pavers, stamped and decorative concrete, sidewalks, and concrete repair.",
   address: {
     "@type": "PostalAddress",
     addressLocality: site.address.locality,

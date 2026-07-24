@@ -9,7 +9,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Testimonials | What DFW Homeowners Say",
   description:
-    "Reviews from CureCraft Concrete customers across Dallas–Fort Worth — driveways, patios, stamped concrete, pool decks, and repair projects.",
+    "Reviews from CureCraft Concrete customers across Dallas–Fort Worth — driveways, patios, pavers, stamped concrete, and repair projects.",
   alternates: { canonical: "/testimonials/" },
 };
 

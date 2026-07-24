@@ -10,7 +10,7 @@ import { site } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Concrete Financing | Build Now, Pay Over Time",
   description:
-    "Flexible financing options for driveways, patios, pool decks, and decorative concrete across DFW. Simple application, fast decisions, no prepayment penalties.",
+    "Flexible financing options for driveways, patios, pavers, and decorative concrete across DFW. Simple application, fast decisions, no prepayment penalties.",
   alternates: { canonical: "/financing/" },
 };
 
