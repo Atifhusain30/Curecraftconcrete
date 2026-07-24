@@ -10,6 +10,7 @@ import FaqSchema from "@/components/FaqSchema";
 import QuoteForm from "@/components/QuoteForm";
 import CtaBand from "@/components/CtaBand";
 import Reveal from "@/components/Reveal";
+import SpecStrip from "@/components/SpecStrip";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -69,6 +70,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      <SpecStrip />
+
       {/* Benefits */}
       <section className="wrap py-16 sm:py-20">
         <Reveal>
@@ -113,14 +116,18 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <div className="space-y-5">
             <Reveal>
               <div className="rounded-xl border border-line bg-white p-7 shadow-card">
-                <h2 className="display-xl text-lg">Materials we use</h2>
-                <ul className="mt-4 space-y-2.5">
+                <p className="eyebrow">Job specs</p>
+                <h2 className="display-xl mt-2 text-lg">Materials & standards</h2>
+                <ul className="mt-4 divide-y divide-line">
                   {service.materials.map((m) => (
-                    <li key={m} className="flex items-center gap-2.5 text-[14px] text-graphite">
+                    <li key={m} className="flex items-center gap-3 py-2.5 text-[14px] text-graphite">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-bronze" aria-hidden /> {m}
                     </li>
                   ))}
                 </ul>
+                <p className="mt-4 border-t border-line pt-4 font-display text-[12.5px] font-semibold uppercase tracking-[0.06em] text-steel">
+                  Same standard on every {service.name.toLowerCase()} job
+                </p>
               </div>
             </Reveal>
             <Reveal delay={60}>

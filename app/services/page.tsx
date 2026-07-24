@@ -10,7 +10,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Concrete Services in Dallas–Fort Worth",
   description:
-    "Driveways, patios, stamped concrete, pool decks, sidewalks, repair, and commercial flatwork — every CureCraft service, built to one structural standard.",
+    "Driveways, patios, pavers, stamped & decorative concrete, sidewalks, and repair — every CureCraft service, built to one structural standard.",
   alternates: { canonical: "/services/" },
 };
 
@@ -22,7 +22,7 @@ export default function ServicesPage() {
         <SectionHeading
           eyebrow="Services"
           title="Everything concrete, one standard"
-          lead="Decorative or structural, residential or commercial — the base work, reinforcement, and finishing discipline never change. Choose a service to see exactly how we build it."
+          lead="Poured slabs or interlocking pavers, new work or repair — the base work, reinforcement, and finishing discipline never change. Choose a service to see exactly how we build it."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
