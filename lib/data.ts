@@ -226,7 +226,6 @@ export const globalFaqs = [
   { q: "Is the estimate really free?", a: "Yes. We measure on site and deliver a written, itemized quote at no cost and with no obligation. You'll know exactly what's included before you decide." },
   { q: "Are you licensed and insured?", a: "CureCraft is fully insured, and certificates of insurance are available on request before any work begins." },
   { q: "What warranty do you offer?", a: `Every residential project carries our written ${site.warrantyYears}-year workmanship warranty. If our workmanship fails, we make it right.` },
-  { q: "Do you offer financing?", a: "Yes — flexible financing options are available for qualifying projects, so you can build now and pay over time. Ask during your estimate." },
   { q: "How far out are you scheduling?", a: "Typically 1–3 weeks from approved estimate to start, adjusted honestly for weather. We give you a real window, then keep you updated." },
   { q: "Will there be a mess?", a: "Demo is dusty by nature, but our crews protect landscaping, contain debris, haul off everything we remove, and leave the site clean every day." },
   { q: "How long until I can use my new concrete?", a: "Foot traffic in 24–48 hours; vehicles after about 7 days. Full design strength develops over 28 days. We'll give you exact timelines for your project." },

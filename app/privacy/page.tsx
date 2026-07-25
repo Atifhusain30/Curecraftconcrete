@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           <h2 className="display-xl pt-2 text-xl">How we use it</h2>
           <p>We use your information to respond to your inquiry, schedule and prepare estimates, perform contracted work, and communicate about your project. If you consent, we may contact you by phone, text, or email about your request.</p>
           <h2 className="display-xl pt-2 text-xl">What we don&apos;t do</h2>
-          <p>We do not sell your personal information. We do not share it with third parties except service providers necessary to operate our business (such as our website host and, if you request it, financing partners) or where required by law.</p>
+          <p>We do not sell your personal information. We do not share it with third parties except service providers necessary to operate our business (such as our website host) or where required by law.</p>
           <h2 className="display-xl pt-2 text-xl">Data retention &amp; your choices</h2>
           <p>We retain inquiry and project records as needed for business and legal purposes. You may request access to or deletion of your personal information, or opt out of communications, by contacting us at {site.email} or {site.phone}.</p>
           <h2 className="display-xl pt-2 text-xl">Contact</h2>

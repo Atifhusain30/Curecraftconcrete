@@ -106,7 +106,7 @@ export default function HomePage() {
             </p>
 
             <ul className="mt-6 grid max-w-lg gap-2.5 sm:grid-cols-2">
-              {["Free written estimates", "Self-performed crews", "Engineered for Texas soil", "Financing available"].map((item) => (
+              {["Free written estimates", "Self-performed crews", "Engineered for Texas soil", "Demo & haul-off included"].map((item) => (
                 <li key={item} className="flex items-center gap-2.5 text-[15px] font-medium text-white">
                   <CheckCircle2 size={17} className="shrink-0 text-white/70" aria-hidden />
                   {item}
@@ -358,7 +358,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ FAQ + FINANCING ============ */}
+      {/* ============ FAQ ============ */}
       <section className="texture-slab">
         <div className="wrap grid gap-12 py-16 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
@@ -367,15 +367,6 @@ export default function HomePage() {
               title="Common questions"
               lead="Straight answers to what homeowners ask us most. More on the FAQs page."
             />
-            <div className="mt-8 rounded-lg border border-line bg-white p-6 shadow-card">
-              <p className="font-display text-[16px] font-bold uppercase tracking-[0.03em] text-iron">Financing available</p>
-              <p className="mt-1.5 text-[14.5px] leading-relaxed text-steel">
-                Build now, pay over time — flexible financing for qualifying projects.
-              </p>
-              <Link href="/financing/" className="mt-3 inline-flex items-center gap-1.5 font-display text-[13.5px] font-semibold uppercase tracking-[0.06em] text-iron underline underline-offset-4">
-                Financing details
-              </Link>
-            </div>
           </div>
           <FaqList faqs={globalFaqs.slice(0, 6)} />
         </div>

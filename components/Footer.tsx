@@ -72,7 +72,6 @@ export default function Footer() {
               ["/about/", "About CureCraft"],
               ["/gallery/", "Project Gallery"],
               ["/testimonials/", "Testimonials"],
-              ["/financing/", "Financing"],
               ["/faqs/", "FAQs"],
               ["/contact/", "Request an Estimate"],
             ].map(([href, label]) => (

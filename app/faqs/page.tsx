@@ -9,7 +9,7 @@ import CtaBand from "@/components/CtaBand";
 export const metadata: Metadata = {
   title: "FAQs | Concrete Questions, Answered Straight",
   description:
-    "Estimates, warranties, scheduling, cure times, financing, and more — answers to the questions DFW homeowners ask before hiring a concrete contractor.",
+    "Estimates, warranties, scheduling, cure times, and more — answers to the questions DFW homeowners ask before hiring a concrete contractor.",
   alternates: { canonical: "/faqs/" },
 };
 

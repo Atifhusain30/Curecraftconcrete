@@ -105,7 +105,7 @@ export default function CityPage({ params }: { params: { city: string } }) {
               />
             </Reveal>
             <ul className="mt-8 space-y-3 text-[15px] text-graphite">
-              {["Free on-site estimates, written and itemized", `Licensed & insured · ${site.warrantyYears}-year workmanship warranty`, "Financing available for qualifying projects", "Demo, haul-off, and daily cleanup included"].map((item) => (
+              {["Free on-site estimates, written and itemized", `Licensed & insured · ${site.warrantyYears}-year workmanship warranty`, "Demo, haul-off, and daily cleanup included"].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-bronze" aria-hidden /> {item}
                 </li>

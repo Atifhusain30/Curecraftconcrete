@@ -11,7 +11,6 @@ const nav = [
   { href: "/gallery/", label: "Projects" },
   { href: "/service-areas/", label: "Service Areas" },
   { href: "/about/", label: "About" },
-  { href: "/financing/", label: "Financing" },
   { href: "/faqs/", label: "FAQs" },
 ];
 
