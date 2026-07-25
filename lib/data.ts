@@ -243,17 +243,12 @@ export const testimonials = [
   { name: "Carlos G.", city: "McKinney", service: "Walkway & Steps", quote: "They hand-worked around our old oak's roots instead of cutting them. That care showed up in every detail of the job." },
 ];
 
-export const galleryProjects = [
-  { title: "Ashlar Slate Stamped Courtyard", city: "Southlake", category: "Stamped & Decorative", tone: "warm" },
-  { title: "Broom-Finish Driveway Replacement", city: "Plano", category: "Driveways", tone: "light" },
-  { title: "Herringbone Paver Driveway", city: "Frisco", category: "Pavers", tone: "cool" },
-  { title: "Terraced Walkway & Steps", city: "Flower Mound", category: "Sidewalks", tone: "warm" },
-  { title: "Exposed Aggregate Walkway", city: "McKinney", category: "Sidewalks", tone: "light" },
-  { title: "Wood-Plank Stamped Porch", city: "Prosper", category: "Stamped & Decorative", tone: "warm" },
-  { title: "Circular Drive Addition", city: "Dallas", category: "Driveways", tone: "light" },
-  { title: "Outdoor Kitchen Slab", city: "Allen", category: "Stamped & Decorative", tone: "cool" },
-  { title: "Sidewalk Panel Replacement", city: "Irving", category: "Concrete Repair", tone: "cool" },
-  { title: "Stained & Scored Porch", city: "Dallas", category: "Stamped & Decorative", tone: "warm" },
-  { title: "RV Pad with Turnout", city: "Little Elm", category: "Driveways", tone: "light" },
-  { title: "Basket Weave Paver Walkway", city: "Arlington", category: "Pavers", tone: "cool" },
-];
+export type GalleryProject = {
+  title: string;
+  city: string;
+  category: string;
+  photo: string; // path under /public, e.g. "/images/gallery/plano-driveway.jpg"
+};
+
+// Real projects only — add an entry per photo as they come in.
+export const galleryProjects: GalleryProject[] = [];

@@ -19,7 +19,7 @@ export default function GalleryPage() {
         <SectionHeading
           eyebrow="Project gallery"
           title="Work that speaks for itself"
-          lead="Filter by project type to see how CureCraft handles everything from clean broom-finish driveways to fully decorative stamped and stained work."
+          lead="From clean broom-finish driveways to fully decorative stamped and stained work — real CureCraft projects across the Metroplex."
         />
         <div className="mt-12">
           <GalleryGrid />

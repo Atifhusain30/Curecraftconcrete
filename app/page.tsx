@@ -47,15 +47,6 @@ const SERVICE_IMGS = [
   img("1504307651254-35680f356dfd", 900), // repair
 ];
 
-const GALLERY_IMGS = [
-  img("1600596542815-ffad4c1539a9", 900),
-  img("1600585154526-990dced4db0d", 900),
-  img("1600573472592-401b489a3cdc", 900),
-  img("1600121848594-d8644e57abab", 900),
-  img("1613490493576-7fde63acd811", 900),
-  img("1600047509807-ba8f99d2cdde", 900),
-];
-
 const badges = [
   { icon: ShieldCheck, title: "Licensed & Insured", sub: "Certificates available on request" },
   { icon: Award, title: `${site.warrantyYears}-Year Warranty`, sub: "Written workmanship guarantee" },
@@ -233,41 +224,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ RECENT PROJECTS ============ */}
-      <section className="texture-slab">
-        <div className="wrap py-16 sm:py-20">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <SectionHeading
-              eyebrow="Recent projects"
-              title="Our work across the Metroplex"
-            />
-            <Link href="/gallery/" className="btn-ghost shrink-0">
-              View Full Gallery <ArrowRight size={15} aria-hidden />
-            </Link>
+      {/* ============ RECENT PROJECTS (hidden until real projects are added) ============ */}
+      {galleryProjects.length > 0 && (
+        <section className="texture-slab">
+          <div className="wrap py-16 sm:py-20">
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <SectionHeading
+                eyebrow="Recent projects"
+                title="Our work across the Metroplex"
+              />
+              <Link href="/gallery/" className="btn-ghost shrink-0">
+                View Full Gallery <ArrowRight size={15} aria-hidden />
+              </Link>
+            </div>
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {galleryProjects.slice(0, 6).map((p, i) => (
+                <Reveal key={p.title} delay={(i % 3) * 60}>
+                  <figure className="group relative overflow-hidden rounded-lg shadow-card">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={p.photo}
+                      alt={`${p.title} — ${p.city}, TX`}
+                      loading="lazy"
+                      className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-5 pt-14 text-white">
+                      <p className="font-display text-[15.5px] font-bold uppercase tracking-[0.02em]">{p.title}</p>
+                      <p className="mt-0.5 flex items-center gap-1.5 text-[13px] text-white/75">
+                        <MapPin size={12} aria-hidden /> {p.city}, TX · {p.category}
+                      </p>
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {galleryProjects.slice(0, 6).map((p, i) => (
-              <Reveal key={p.title} delay={(i % 3) * 60}>
-                <figure className="group relative overflow-hidden rounded-lg shadow-card">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={GALLERY_IMGS[i]}
-                    alt={`${p.title} — ${p.city}, TX`}
-                    loading="lazy"
-                    className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-5 pt-14 text-white">
-                    <p className="font-display text-[15.5px] font-bold uppercase tracking-[0.02em]">{p.title}</p>
-                    <p className="mt-0.5 flex items-center gap-1.5 text-[13px] text-white/75">
-                      <MapPin size={12} aria-hidden /> {p.city}, TX · {p.category}
-                    </p>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ============ REVIEWS ============ */}
       <section className="wrap py-16 sm:py-20">

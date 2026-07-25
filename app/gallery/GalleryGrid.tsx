@@ -11,6 +11,20 @@ export default function GalleryGrid() {
   const [active, setActive] = useState("All");
   const filtered = active === "All" ? galleryProjects : galleryProjects.filter((p) => p.category === active);
 
+  if (galleryProjects.length === 0) {
+    return (
+      <div className="rounded-xl border border-line bg-white px-6 py-16 text-center shadow-card">
+        <p className="font-display text-[18px] font-bold uppercase tracking-[0.03em] text-iron">
+          Project photos coming soon
+        </p>
+        <p className="mx-auto mt-3 max-w-md text-[15px] leading-relaxed text-steel">
+          We&apos;re adding photos from recent jobs across the Metroplex. In the meantime, request a
+          free estimate and we&apos;ll walk you through examples of our work in your area.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="flex flex-wrap gap-2.5" role="group" aria-label="Filter projects by category">
@@ -31,8 +45,14 @@ export default function GalleryGrid() {
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((p) => (
           <figure key={p.title} className="group overflow-hidden rounded-xl border border-line shadow-card transition-all duration-300 hover:shadow-lift">
-            <div className={`tile-${p.tone} tile-texture relative aspect-[4/3] overflow-hidden`}>
-              <div className="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-[1.04]" />
+            <div className="relative aspect-[4/3] overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={p.photo}
+                alt={`${p.title} — ${p.city}, TX`}
+                loading="lazy"
+                className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+              />
               <span className="absolute left-4 top-4 rounded-full bg-iron/70 px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur">
                 {p.category}
               </span>
