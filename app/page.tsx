@@ -25,7 +25,7 @@ import FinishShowcase from "@/components/FinishShowcase";
 export const metadata: Metadata = {
   title: `Concrete Contractor Dallas–Fort Worth | Driveways, Pavers & Stamped Concrete | ${site.name}`,
   description:
-    "DFW's trusted concrete contractor. Driveways, pavers, and stamped & decorative concrete — self-performed crews, 5-year workmanship warranty, free written estimates. Call (214) 555-0199.",
+    "DFW's trusted concrete contractor. Driveways, pavers, and stamped & decorative concrete — self-performed crews, 5-year workmanship warranty, free written estimates. Call (945) 225-5773.",
   alternates: { canonical: "/" },
 };
 

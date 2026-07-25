@@ -2,12 +2,10 @@ export const site = {
   name: "CureCraft Concrete",
   legalName: "CureCraft Concrete LLC",
   tagline: "Concrete, poured to last a lifetime.",
-  // TODO: replace with the real production domain before launch
-  url: "https://curecraftconcrete.com",
-  // TODO: replace with the real business phone + email before launch
-  phone: "(214) 555-0199",
-  phoneHref: "tel:+12145550199",
-  email: "hello@curecraftconcrete.com",
+  url: "https://curecraftconcretellc.com",
+  phone: "(945) 225-5773",
+  phoneHref: "tel:+19452255773",
+  email: "support@curecraftllc.com",
   serviceArea: "Dallas–Fort Worth Metroplex",
   address: { locality: "Dallas", region: "TX", country: "US" },
   hours: "Mon–Sat, 7:00 AM – 7:00 PM",
